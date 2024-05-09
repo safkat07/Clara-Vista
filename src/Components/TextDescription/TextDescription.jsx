@@ -36,7 +36,8 @@ function AnimatedText({ children }) {
                 scrub: 0.9
             },
             left: "-200px",
-            opacity: 0
+            opacity: 0,
+            stagger: "0.2"
         })
 
     }, []);
