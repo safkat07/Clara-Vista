@@ -2,7 +2,7 @@
 
 Welcome to Clara Vista, your ultimate destination for high-quality goggles! 🕶️
 
-[![Clara Vista Preview](preview.jpg)](https://ibb.co/8jjRq0H)
+[![Clara Vista Preview](https://ibb.co/8jjRq0H)](https://ibb.co/8jjRq0H)
 
 ## Table of Contents
 
