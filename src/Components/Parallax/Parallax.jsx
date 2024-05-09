@@ -13,7 +13,7 @@ const Parallax = () => {
         const timeline = gsap.timeline({
             scrollTrigger: {
                 trigger: backgroundImg.current,
-                start: "top 40%",
+                start: "top 60%",
                 end: "bottom center ",
                 scrub: 0.5,
             }
@@ -36,7 +36,7 @@ const Parallax = () => {
                 <div >
                     <img ref={introImg} className='brightness-75 object-cover object-top relative' width={300} src={littleimg} alt="" />
                 </div>
-                <h1 data-scroll data-scroll-speed="0.9" className='text-7xl uppercase absolute mt-[20vh] text-opacity-65 font-ubuntu z-[99] font-semibold text-white text-center'>Welcome to Wrold of Goggles</h1>
+                <h1 data-scroll data-scroll-speed="0.9" className='text-7xl uppercase absolute mt-[20vh] text-opacity-65 font-ubuntu z-[10] font-semibold text-white text-center'>Clara Vista: Style and Clarity Redefined.</h1>
             </div>
         </div>
     )

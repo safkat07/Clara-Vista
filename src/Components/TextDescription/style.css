@@ -1,0 +1,17 @@
+.description {
+    position: relative;
+    z-index: 1;
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    margin-left: 5vw;
+    margin-bottom: 10vh;
+    text-transform: uppercase;
+    line-height: 60px;
+
+
+}
+
+.description p {
+    margin: 0px;
+    position: relative;
+}
