@@ -14,7 +14,7 @@ export default class SmoothScroll extends React.Component {
             });
         }
     });
-    componentDidMount() {
+    componentxDidMount() {
         window.addEventListener("scroll", this.onScroll);
         this.ro.observe(this.viewport);
     }
@@ -26,7 +26,7 @@ export default class SmoothScroll extends React.Component {
     };
     render() {
         return (
-            <div className="viewport" ref={ref => (this.viewport = ref)}>
+            <div  ref={ref => (this.viewport = ref)}>
                 {this.props.children}
             </div>
         );
