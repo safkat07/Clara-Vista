@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import bgimg from '../../assets/pexels-olly-842811.jpg';
-import littleimg from '../../assets/little_img.jpg';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -23,7 +22,7 @@ const Parallax = () => {
             clipPath: "inset(25%)",
 
         })
-           
+
     }, []);
 
     return (
