@@ -95,7 +95,7 @@ const PremeiumCollections = () => {
             gsap.from(boxRef, {
                 opacity: 0,
                 y: 30,
-                duration: 0.3,
+                duration: 0.2,
                 scrollTrigger: {
                     trigger: boxRef,
                     start: 'top bottom',
@@ -107,10 +107,10 @@ const PremeiumCollections = () => {
     }, []);
 
     return (
-        <div className='min-h-screen'>
+        <div className='min-h-screen '>
             <h1 className='text-center text-5xl my-10 font-ubuntu'>Fan Favorite</h1>
 
-            <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-4 mx-auto justify-center items-center'>
+            <div className='grid  px-10 gap-6 md:grid-cols-2 lg:grid-cols-4 mx-auto justify-center items-center'>
                 {goggles.map((goggle, index) => (
                     <div
                         ref={(element) => (boxRefs.current[index] = element)}
