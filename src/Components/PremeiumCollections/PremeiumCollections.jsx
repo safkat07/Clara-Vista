@@ -151,7 +151,7 @@ const PremeiumCollections = () => {
                     className='text-xl font-semibold bg-blue-500 text-white py-2 px-4 rounded'
                     onClick={handleToggle}
                 >
-                    {showMore ? 'View More' : 'View Less'}
+                    {showMore ? 'Show More' : 'Show Less'}
                 </button>
             </div>
         </div>
