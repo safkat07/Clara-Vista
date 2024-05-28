@@ -5,7 +5,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Parallax = () => {
     const backgroundImg = useRef(null);
-    const introImg = useRef(null);
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);

@@ -10,12 +10,10 @@ import img9 from '../../assets/pc9-removebg-preview (1).png'
 import img10 from '../../assets/pc10-removebg-preview.png'
 import { BsArrowUpRight } from "react-icons/bs";
 import './style.css'
-import { useEffect } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { useLayoutEffect, useRef } from 'react'
-
 
 const goggles = [
     {
@@ -80,12 +78,9 @@ const goggles = [
     }
 ];
 
-
-
-
-
-
 const PremeiumCollections = () => {
+    const [itemsToShow, setItemsToShow] = useState(4);
+    const [showMore, setShowMore] = useState(true);
     const boxRefs = useRef([]);
 
     useEffect(() => {
@@ -104,14 +99,30 @@ const PremeiumCollections = () => {
                 },
             });
         });
-    }, []);
+    }, [itemsToShow]);
+
+    const handleToggle = () => {
+        if (showMore) {
+            if (itemsToShow + 4 >= goggles.length) {
+                setItemsToShow(goggles.length);
+                setShowMore(false);
+            } else {
+                setItemsToShow(itemsToShow + 4);
+            }
+        } else {
+            setItemsToShow(4);
+            setShowMore(true);
+        }
+    };
+
+    const displayedGoggles = goggles.slice(0, itemsToShow);
 
     return (
-        <div className='min-h-screen '>
-            <h1 className='text-center text-5xl my-10 font-ubuntu'>Fan Favorite</h1>
+        <div className=''>
+            <h1 className='text-center text-[5vw] my-10 font-ubuntu'>Fan Favorite</h1>
 
-            <div className='grid  px-10 gap-6 md:grid-cols-2 lg:grid-cols-4 mx-auto justify-center items-center'>
-                {goggles.map((goggle, index) => (
+            <div className='grid px-10 gap-6 md:grid-cols-2 lg:grid-cols-4 mx-auto justify-center items-center'>
+                {displayedGoggles.map((goggle, index) => (
                     <div
                         ref={(element) => (boxRefs.current[index] = element)}
                         className='box relative font-ubuntu justify-center bgStyle items-center flex flex-col cursor-pointer hover:scale-105 transition-all duration-500'
@@ -122,11 +133,11 @@ const PremeiumCollections = () => {
                         </div>
                         <div className='flex flex-col'>
                             <p className='text-2xl'>{goggle.glassname}</p>
-                            <p className='text-sm px-3 py-1 border rounded-full bg-neutral-200 font-bold'>
+                            <p className='text-sm px-3 absolute right-2 top-[60%] py-1 border rounded-full bg-neutral-200 font-bold'>
                                 {goggle.glasstype}
                             </p>
-                            <div className='flex justify-between'>
-                                <p className='text-xl font-semibold pt-4'>${goggle.price}</p>
+                            <div className='flex items-center pt-4 pb-4 justify-between'>
+                                <p className='text-xl font-semibold'>${goggle.price}</p>
                                 <button className='text-xl flex items-center'>
                                     Learn More <BsArrowUpRight />
                                 </button>
@@ -134,6 +145,14 @@ const PremeiumCollections = () => {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className='text-center my-10'>
+                <button
+                    className='text-xl font-semibold bg-blue-500 text-white py-2 px-4 rounded'
+                    onClick={handleToggle}
+                >
+                    {showMore ? 'View More' : 'View Less'}
+                </button>
             </div>
         </div>
     );

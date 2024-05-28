@@ -9,13 +9,13 @@ const Home = () => {
     return (
         <>
             <Banner />
-            <Parallax />
-            <TextDescription />
-            <FeaturedModels />
-            <PremeiumCollections />
+            {/* <Parallax /> */}
+            {/* <TextDescription /> */}
+            {/* <FeaturedModels /> */}
+            {/* <PremeiumCollections /> */}
+            {/* <AboutUs/>
             <AboutUs/>
-            <AboutUs/>
-            <AboutUs/>
+            <AboutUs/> */}
         </>
 
 
