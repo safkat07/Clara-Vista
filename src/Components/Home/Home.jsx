@@ -9,9 +9,9 @@ const Home = () => {
     return (
         <>
             <Banner />
-            {/* <Parallax /> */}
-            {/* <TextDescription /> */}
-            {/* <FeaturedModels /> */}
+            <Parallax />
+            <TextDescription />
+            <FeaturedModels />
             {/* <PremeiumCollections /> */}
             {/* <AboutUs/>
             <AboutUs/>
