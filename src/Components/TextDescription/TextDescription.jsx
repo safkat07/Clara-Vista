@@ -10,11 +10,11 @@ const TextDescription = () => {
     const phrases = ["Where Style Meets Clarity", "Explore our curated collection of goggles,", "and fashion aficionado alike,", "Experience unparalleled clarity", "See the world differently with Clara Vista."
     ]
     return (
-        <div className="description">
+        <div className="description md:block hidden">
             {
                 phrases.map((phrase, index) => {
 
-                    return <AnimatedText key={index}>{phrase}</AnimatedText>
+                    return <AnimatedText  key={index}>{phrase}</AnimatedText>
                 })
             }
         </div>
@@ -42,7 +42,7 @@ function AnimatedText({ children }) {
 
     }, []);
     return (
-        <p ref={text} className='font-ubuntu'>
+        <p ref={text} className='font-ubuntu '>
             {children}
         </p>
     )

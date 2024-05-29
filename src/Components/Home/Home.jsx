@@ -1,5 +1,6 @@
 import AboutUs from "../AboutUs/AboutUs"
 import Banner from "../Banner/Banner"
+import CheckYourGlass from "../CheckYourGlass/CheckYourGlass"
 import FeaturedModels from "../FeaturedModels/FeaturedModels"
 import Parallax from "../Parallax/Parallax"
 import PremeiumCollections from "../PremeiumCollections/PremeiumCollections"
@@ -15,6 +16,7 @@ const Home = () => {
             <FeaturedModels />
             <PremeiumCollections />
             <UpcomingModels />
+            <CheckYourGlass />
 
         </>
 

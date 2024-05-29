@@ -146,7 +146,7 @@ const PremeiumCollections = () => {
                     </div>
                 ))}
             </div>
-            <div className='text-center my-10'>
+            <div className='text-center pt-44'>
                 <button
                     className='text-xl font-semibold bg-blue-500 text-white py-2 px-4 rounded'
                     onClick={handleToggle}

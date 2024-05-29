@@ -5,9 +5,9 @@ import glassImg from '../../assets/bannerGlass.png'
 const Banner = () => {
     return (
         <div
-            style={{ minHeight: "calc(100vh - 80px)" }}
-            className="bg-[#f5f6f7] relative">
-            <div className="flex gap-x-[3vw] w-[100%] pt-20 justify-between">
+           
+            className="bg-[#f5f6f7] h-screen relative">
+            <div className="flex gap-x-[3vw] w-[100%] pt-40 justify-between">
                 {/* left img */}
                 <div className="bg-gradient-to-t  from-[#e7ecece7] to-[#f6f8f8f3] relative  flex-1   z-10 h-[70vh]" >
                     <img

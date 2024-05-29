@@ -10,7 +10,7 @@ const Navbar = () => {
     const [open, setIsOpen] = useState(false);
 
     return (
-        <div className='bg-white shadow-md'>
+        <div className='bg-white  z-[99]  fixed  left-0 right-0'>
             {/* icons and navlinks */}
             <div className='flex items-center h-20 px-[3vw] justify-between'>
                 {/* logo */}
