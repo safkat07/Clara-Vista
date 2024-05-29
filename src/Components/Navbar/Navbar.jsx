@@ -4,15 +4,32 @@ import { IoSearchOutline } from "react-icons/io5";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { PiUser } from "react-icons/pi";
 import { CiMenuFries } from "react-icons/ci";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
     const [open, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
-        <div className='bg-white  z-[99]  fixed  left-0 right-0'>
+        <div className={`bg-white z-[99] fixed left-0 right-0 transition-all duration-500 ${scrolled ? 'scale-95 h-16 rounded-xl' : 'h-20'}`}>
             {/* icons and navlinks */}
-            <div className='flex items-center h-20 px-[3vw] justify-between'>
+            <div className='flex items-center px-[3vw] justify-between h-full'>
                 {/* logo */}
                 <div className='flex gap-x-[3vw] items-center'>
                     <NavLink to="/">

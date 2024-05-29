@@ -34,7 +34,7 @@ const Parallax = () => {
                 {/* <div >
                     <img ref={introImg} className='brightness-75 object-cover object-top relative' width={300} src={littleimg} alt="" />
                 </div> */}
-                <h1 data-scroll data-scroll-speed="0.9" className='text-[7vw] uppercase absolute lg:mt-[70vh] mt-[10vh] text-opacity-65 font-ubuntu z-[10] font-semibold text-white text-center'>Clara Vista: Style and Clarity Redefined.</h1>
+                <h1 data-scroll data-scroll-speed="0.9" className='text-[4vw] uppercase absolute lg:mt-[30vh] mt-[10vh] text-opacity-65 font-ubuntu z-[10] font-semibold text-white text-center'>Clara Vista: Style and Clarity Redefined.</h1>
             </div>
         </div>
     )
