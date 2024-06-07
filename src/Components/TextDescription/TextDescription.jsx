@@ -10,11 +10,11 @@ const TextDescription = () => {
     const phrases = ["Where Style Meets Clarity", "Explore our curated collection of goggles,", "and fashion aficionado alike,", "Experience unparalleled clarity", "See the world differently with Clara Vista."
     ]
     return (
-        <div className="description md:block hidden">
+        <div className="description   md:block hidden">
             {
                 phrases.map((phrase, index) => {
 
-                    return <AnimatedText  key={index}>{phrase}</AnimatedText>
+                    return <AnimatedText key={index}>{phrase}</AnimatedText>
                 })
             }
         </div>

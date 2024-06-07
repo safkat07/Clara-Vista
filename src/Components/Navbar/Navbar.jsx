@@ -27,7 +27,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className={`bg-white z-[99] fixed left-0 right-0 transition-all duration-500 ${scrolled ? 'scale-95 h-16 rounded-xl' : 'h-20'}`}>
+        <div className={`bg-white z-[99] fixed left-0 right-0 transition-all duration-500 ${scrolled ? 'scale-95 h-16   rounded-xl' : 'h-20'}`}>
             {/* icons and navlinks */}
             <div className='flex items-center px-[3vw] justify-between h-full'>
                 {/* logo */}
@@ -60,7 +60,7 @@ const Navbar = () => {
                 </span>
             </div>
 
-            <div className={`h-screen fixed z-[100] bg-neutral-500 transition-all duration-700 top-0 w-1/2 ${open ? "right-0" : "-right-full"}`}>
+            <div className={`h-screen fixed   z-[100] bg-neutral-500 transition-all duration-700 top-0 w-1/2 ${open ? "right-0" : "-right-full"} ${scrolled && "scale-100"}`}>
                 <ul className="flex px-2 text-[7vw] justify-center items-end gap-y-5 mx-auto flex-col text-neutral-50 h-full">
                     <li>
                         <NavLink to="/" onClick={() => setIsOpen(false)}>Home</NavLink>

@@ -16,7 +16,7 @@ const Banner = () => {
                     <p className='font-banner text-[15vw] pt-[10vw] lg:text-[7vw] tracking-[0.2em] lg:pt-[8vh] text-center text-opacity-40 text-gray-950'>Clara Vista</p>
                 </div>
                 {/* right img */}
-                <div className="  text-center md:block hidden relative  flex-1  z-10 h-[70vh]" >
+                <div className="  text-center lg:block hidden relative  flex-1  z-10 h-[70vh]" >
                     <div className='flex pt-[2vh] flex-col'>
                         <p className='text-[3vw] '><span className='font-banner2 text-gray-600 text-[3vw]'>Clara-Vista</span> <span className='font-ubuntu font-semibold'>Pinnacle III</span></p>
                         <p className='text-[2vw] font-ubuntu  '>Sophistication Beyond Sight.</p>
@@ -44,7 +44,7 @@ const Banner = () => {
 
 
             {/* for mobile */}
-            <div className="  text-center md:hidden block relative  flex-1  " >
+            <div className="  text-center lg:hidden block relative  flex-1  " >
                 <div className='flex pt-[2vh] flex-col'>
                     <p className='md:text-[3vw] text-[7vw] '><span className='font-banner2 text-gray-600 md:text-[3vw]'>Clara-Vista</span> <span className='font-ubuntu font-semibold'>Pinnacle III</span></p>
                     <p className='md:text-[2vw]  font-ubuntu  '>Sophistication Beyond Sight.</p>
